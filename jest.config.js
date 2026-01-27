@@ -24,7 +24,9 @@ module.exports = {
       },
     ],
   },
-  transformIgnorePatterns: ['node_modules/(?!@faker-js/faker/)'],
+  transformIgnorePatterns: [
+  'node_modules/(?!.*@faker-js/faker)',
+],
   testEnvironment: 'node',
   collectCoverageFrom: ['**/*.(t|j)s'],
   coverageDirectory: '../coverage',
